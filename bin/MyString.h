@@ -70,7 +70,6 @@ class MyString
    */
    void concat(char const* strIn);
 
- private:
    /*
    Desc: Used in conjunction with the function, find. Loops through MyString starting
          with idx looking for strIn.
