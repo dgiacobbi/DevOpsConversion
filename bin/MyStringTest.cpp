@@ -45,16 +45,16 @@ TEST(isEqual2, InvalidEqual){
 TEST(find1, ValidFind){
     MyString str1("testing");
     MyString* str2 = new MyString("testing");
-    ASSERT_EQ(str1.isEqual("ing"), 4);
-    ASSERT_EQ(str2->isEqual("ing"), 4);
+    ASSERT_EQ(str1.find("ing"), 4);
+    ASSERT_EQ(str2->find("ing"), 4);
 }
 
 
 TEST(find2, InvalidFind){
     MyString str1("testing");
     MyString* str2 = new MyString("testing");
-    ASSERT_EQ(str1.isEqual("ont"), -1);
-    ASSERT_EQ(str2->isEqual("ont"), -1);
+    ASSERT_EQ(str1.find("ont"), -1);
+    ASSERT_EQ(str2->find("ont"), -1);
 }
 
 
@@ -69,8 +69,8 @@ TEST(isSub1, ValidSub){
 TEST(isSub2, InvalidSub){
     MyString str1("testing");
     MyString* str2 = new MyString("testing");
-    ASSERT_FALSE(str1.isSub("rle", 4));
-    ASSERT_FALSE(str2->isSub("rle", 4));
+    ASSERT_FALSE(str1.isSub("tl", 0));
+    ASSERT_FALSE(str2->isSub("tl", 0));
 }
 
 
