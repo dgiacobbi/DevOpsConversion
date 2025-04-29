@@ -13,7 +13,7 @@ build-deb:
 	./build-deb.sh	
 
 lint-deb:
-	-lintian myStrLib-v1.0.0.deb
+	-lintian mystrlib-v1.0.0.deb
 
 clean:
 	rm -rf temp

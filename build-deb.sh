@@ -33,6 +33,6 @@ cp bin/MyString.h $TEMP_DIR/usr/local/include
 
 echo "Building deb file"
 dpkg-deb --root-owner-group --build $TEMP_DIR
-mv $TEMP_DIR.deb myStrLib-v1.0.0.deb
+mv $TEMP_DIR.deb mystrlib-v1.0.0.deb
 
 echo "Complete"
