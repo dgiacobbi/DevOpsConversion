@@ -3,10 +3,10 @@
 cd bin
 
 echo "Compiling unit tests"
-g++ -o test -DUNIT_TEST MyStringTest.cpp -lgtest -lgtest_main
+g++ -o teststr -DUNIT_TEST MyStringTest.cpp -lgtest -lgtest_main
 
 echo "Executing unit tests"
-./test
+./teststr
 
 echo "Cleaning up testing files"
 rm -f test
