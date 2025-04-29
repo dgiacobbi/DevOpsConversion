@@ -9,6 +9,6 @@ echo "Executing unit tests"
 ./teststr
 
 echo "Cleaning up testing files"
-rm -f test
+rm -f teststr
 
 echo "Testing session complete"

@@ -28,7 +28,7 @@ jobs:
       - name: Test project
         run: |
           apt update
-          apt-get install -y libgtest-dev cmake
+          apt-get install -y libgtest-dev cmake g++ make
           make test
       - run: echo "This job's status is ${{ job.status }}."
   package:
