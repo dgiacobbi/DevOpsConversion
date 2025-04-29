@@ -1,5 +1,5 @@
 #!/bin/sh
 
 cd bin
-g++ -o myString myString.cpp
-echo "myStrng build success"
+g++ -fPIC -shared -o libMyString.so MyString.cpp
+echo "myString build success"

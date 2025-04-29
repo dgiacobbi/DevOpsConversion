@@ -1,0 +1,8 @@
+After installation on your machine, to run the MyString library, be sure to include in your file:
+
+#include <MyString.h>
+
+Then when compiling and running your program include:
+
+g++ myFile.cpp -L -lMyString
+./a.out

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Update dynamic linker cache"
+ldconfig
+
+echo "MyString C++ Library ready for use"

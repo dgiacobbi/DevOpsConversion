@@ -1,0 +1,8 @@
+Package: myString
+Version: 1.0.0
+Depends: libc6, libgtest-dev, make
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Giacobbi <dgiacobbi@zagmail.gonzaga.edu>
+Description: Simple string library for C++

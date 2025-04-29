@@ -1,5 +1,5 @@
 name: Build and test MyString library (self-hosted)
-run-name: ${{ github.actor }} is building and testing on self-hosted runner
+run-name: ${{ github.actor }} is building and testing MyString Project
 on: [push]
 jobs:
   build:
