@@ -7,6 +7,7 @@ echo "Starting deb package build"
 echo "Making temporary directory tree"
 mkdir -p $TEMP_DIR
 mkdir -p $TEMP_DIR/DEBIAN
+mkdir -p $TEMP_DIR/etc
 mkdir -p $TEMP_DIR/tmp/
 mkdir -p $TEMP_DIR/usr/local/lib
 mkdir -p $TEMP_DIR/usr/local/include
@@ -19,6 +20,9 @@ cp bin/DEBIAN/postinst $TEMP_DIR/DEBIAN/
 
 echo "conffiles setup for DEBIAN"
 cp bin/DEBIAN/conffiles $TEMP_DIR/DEBIAN/
+
+echo "Configuration file into place"
+cp bin/mystring.conf $TEMP_DIR/etc/
 
 echo "Copy example test file into place"
 cp bin/Example.cpp $TEMP_DIR/tmp/

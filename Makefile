@@ -7,4 +7,14 @@ build:
 	./build.sh
 
 test:
-	./test.sh	
+	./test.sh
+
+build-deb:
+	./build-deb.sh	
+
+lint-deb:
+	-lintian myStrLib-v1.0.0.deb
+
+clean:
+	rm -rf temp
+	echo "Binaries, executables, and packages cleaned in repo"
