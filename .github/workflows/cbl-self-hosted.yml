@@ -48,8 +48,8 @@ jobs:
       - name: Upload deb pkg artifact
         uses: actions/upload-artifact@v4
         with:
-          name: counter-v2.0.0.deb
-          path: counter-v2.0.0.deb
+          name: mystrlib-v1.0.0.deb
+          path: mystrlib-v1.0.0.deb
       - run: echo "This job's status is ${{ job.status }}."
   lint:
     timeout-minutes: 2
